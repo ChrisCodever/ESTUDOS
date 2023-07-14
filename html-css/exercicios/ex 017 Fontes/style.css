@@ -1,0 +1,36 @@
+@charset "UTF-8"; 
+
+* 
+
+p {
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    font-style: italic;
+
+    /* Existe uma TAG que adiciona todas as caracteristicas acima !   Essa tag seria assim;
+
+    ----   font: italic bolder 20px 'arial', sans-serif; 
+
+    vAmos usá-la no Título h1 . */
+
+}
+
+h1  {
+    
+    font: italic bolder 40px "verdana",  sans-serif; 
+
+    /* acima é a ordem correta - italic, peso , tamanho e tipo de fonte . */ 
+    color: blue;
+    
+
+}
+
+h2 {
+    font: bolder 30px "arial", sans-serif;
+    /* acima mesmo exemplo de h1 sem o itálico */ 
+
+       color: red;
+}
