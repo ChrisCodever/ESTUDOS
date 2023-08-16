@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modfelos de Caixas</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            height: 200px;
+            width: 200px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: gray;
+
+            border: 10px solid gray; /* esta linha simplifica e substitui os 3 paragrafos acima de border */ 
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px; /* esta linha simplifica e substitui as 4 linhas de cima ! Lembrar da ordem do relógio no box cima , direita , baixo , esquerda */
+            
+            padding: 10px; 
+            /* esta linha substitui a simplificação de cima, isso porque todos os valores eram 10px, nesse caso é preciso apenas a informação de uma única margem */
+
+            padding: 10px 15px;
+            /* aqui outro exmple de simplificação, onde o mesmo núnero da altura será copiado para baixo , e o número do lado direito será copiado para o lado esquerdo. height 10px = bottom 10px right 15px =  left 15px*  ISSO SERVE PARA TODAS ESTRUTURAS DO BOXLEVEL OU BOX INLINE LEVEL */
+
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: chocolate;
+
+            margin: 10px 30px 10px 30px ;
+        }
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+        }
+
+        h2{
+            background-color: aquamarine;
+            height: 150px;
+            width: 150px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: gray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            margin: auto;  /* comando para pora caixa no meio da página*/
+
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Paragrafos também são exemplos de block level, mas os <a href="#"> links são exemplos de caixas inline level</a>Vamos ver como tudo isso funciona </p>
+
+    <h2>Exemplo de box centralizado</h2>
+    
+</body>
+</html>

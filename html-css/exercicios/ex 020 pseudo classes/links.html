@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+
+        # = id
+        . = class
+        : = paseudo-class
+        :: = Pseudo Elemento
+        > = Children
+
+
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(57, 8, 192);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 22px;
+            /* configuração para o link estático , como será visualizado o linkl */ 
+
+        }
+        a:visited {
+            color: darkred;
+            /* adicionou uma pseudo classe  ao link - link que já foi visitado ficará darkred */
+        }
+        a:hover {
+            color: rgb(25, 10, 235);
+            text-decoration: underline;
+             /* quando flutuar(hover) o mouse por cima do link(a) ele ficará sublinhado e verde. */
+        }
+        a:active{
+            color: yellow; 
+            /* quando clicar no link ele ficará amarelo  tag "a"   foi adicionado a cor amarela a esta pseudo classe  */
+        }
+        a::before{
+              content: '☠️  ';    /* pSEUDO elemento adicionado ao link (a) */
+        }
+
+        .especial::after {          /* Adicionando uma elemento : a uma classe . */
+            color: white;
+            content: '  Special';
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 12px;
+            font-style: italic;
+            background-color: rgb(235, 143, 68);
+            
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+
+    
+    <h1>Personalizando links</h1>
+    <li><a href="https://www.uol.com.br/" target="blank">Site UOL</a></li>
+    <li><a href="https://pirate-bay-proxy.org/pt/" target="blank">Pirate Bay</a></li>
+    <li><a href="https://www.netflix.com/browse" target="blank" class="especial">NetFlix</a></li>
+    <li><a href="https://pt.depositphotos.com/stock-photos/idiota.html" target="_blank">Canal dos idiotas (link quebrado)</a></li>
+    <li><a href="https://s.dicio.com.br/imbecil.png" target="_blank" class="especial">Canal dos imbecis (link quebrado)</a></li>
+
+    <!-- target blank serve para abrir a página em outra janela)-->
+
+    </ul>
+</body>
+</html>
