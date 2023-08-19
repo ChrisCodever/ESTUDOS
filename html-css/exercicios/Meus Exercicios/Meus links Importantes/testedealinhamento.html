@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de alinhamento vertical e horizontal </title>
+
+    <style>
+
+         
+        #box1 {
+            height: 600px;
+            width: 300px;
+            background-color: yellow;
+             box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.897);
+            display: inline-block;
+
+             position:    absolute ; /* a partir dessa tag que é possivel mexer nas duas caracteristicas abixo*/
+            left: 50% ;
+            top: 50%;
+            transform: translate(-50%, -50%);
+             
+        }
+
+        #box2  {
+            height: 600px;
+            width: 300px;
+            background-color: yellow;
+            box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.897);
+            display: inline-block;
+
+             position: absolute; /* a partir dessa tag que é possivel mexer nas duas caracteristicas abixo*/
+            left: 50% ;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+body{
+    background-color: rgb(112, 200, 241);
+    height: 96vh;
+    padding: 50px;
+    margin: 50px;
+     
+}
+        
+    </style>
+</head>
+<body>
+    <main>
+    <aside id="box1"></aside>
+    <aside id="box2"></aside>
+    </main>
+
+</body>
+</html>
