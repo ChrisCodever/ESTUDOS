@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /* importante para deixar o cabeçalho fixo*/
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(66, 68, 68);
+            color: antiquewhite;
+        }
+
+        thead > tr > th  {
+
+            position: sticky; /* colavel, grudavel */
+            top: -1px;  /* vai colar no começo do top*/
+             background-color: rgb(66, 68, 68);
+        }
+
+         
+
+        td.num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 8px;
+            background-color: rgb(196, 194, 193);
+        }
+
+
+        tbody > tr:nth-child(odd) /* Ímpar */
+        {
+            background-color: rgba(223, 50, 50, 0.514);
+
+        }
+
+        tbody > tr:nth-child(even) /* pares */
+        {
+            background-color: rgba(247, 236, 85, 0.548);
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        Anatomia para Tabelas Grandes
+        CAPTION (LEGENDA)
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px">População</th>
+            </tr>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 069</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Rio De Janeiro</td>
+            <td class="num">231 654 987</td>
+        </tr>
+
+        <tr>
+            <td>Bahia</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>PAraná</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Pernambuco</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Ceará</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Pará</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Ceará</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+        
+        <tr>
+            <td>Pará</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+        
+        <tr>
+            <td>Santa Catarina</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>MAranhão</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Goias</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Amazonas</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Espirito Santo</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+        
+        <tr>
+            <td>Alagoas</td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+        
+        <tr>
+            <td>Piaui </td>
+            <td class="num"> 21 688 791</td>
+        </tr>
+
+        
+
+    </tbody>
+
+
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>210 147 125</strong></td>
+
+    </tfoot>
+
+    </table>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos repudiandae possimus corporis autem expedita qui eum ipsa aliquid nemo itaque. Sit eum molestiae perspiciatis, qui magni amet distinctio veniam commod Lorem ipsum dolor sit  dolor sit amet consectetur adipisicing eli dolores. Lorem ipsum, dolor sit
+    amet consectetur ad ceat animi id dolores.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus ea iure reprehenderit maiores corrupti aut quia? Sed molestias dolores quisquam ducimus maxime. Facilis magnam, aut a natus quaerat aspernatur?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos repudiandae possimus corporis autem expedita qui eum
+        ipsa aliquid nemo itaque. Sit eum molestiae perspiciatis, qui magni amet distinctio veniam commod Lorem ipsum dolor
+        sit dolor sit amet consectetur adipisicing eli dolores. Lorem ipsum, dolor sit
+        amet consectetur ad ceat animi id dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus ea
+        iure reprehenderit maiores corrupti aut quia? Sed molestias dolores quisquam ducimus maxime. Facilis magnam, aut a
+        natus quaerat aspernatur?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos repudiandae possimus corporis autem expedita qui eum
+            ipsa aliquid nemo itaque. Sit eum molestiae perspiciatis, qui magni amet distinctio veniam commod Lorem ipsum dolor
+            sit dolor sit amet consectetur adipisicing eli dolores. Lorem ipsum, dolor sit
+            amet consectetur ad ceat animi id dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus ea
+            iure reprehenderit maiores corrupti aut quia? Sed molestias dolores quisquam ducimus maxime. Facilis magnam, aut a
+            natus quaerat aspernatur?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos repudiandae possimus corporis autem expedita qui eum
+                ipsa aliquid nemo itaque. Sit eum molestiae perspiciatis, qui magni amet distinctio veniam commod Lorem ipsum dolor
+                sit dolor sit amet consectetur adipisicing eli dolores. Lorem ipsum, dolor sit
+                amet consectetur ad ceat animi id dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus ea
+                iure reprehenderit maiores corrupti aut quia? Sed molestias dolores quisquam ducimus maxime. Facilis magnam, aut a
+                natus quaerat aspernatur?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos repudiandae possimus corporis autem expedita qui eum
+                    ipsa aliquid nemo itaque. Sit eum molestiae perspiciatis, qui magni amet distinctio veniam commod Lorem ipsum dolor
+                    sit dolor sit amet consectetur adipisicing eli dolores. Lorem ipsum, dolor sit
+                    amet consectetur ad ceat animi id dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus ea
+                    iure reprehenderit maiores corrupti aut quia? Sed molestias dolores quisquam ducimus maxime. Facilis magnam, aut a
+                    natus quaerat aspernatur?</p>
+    
+</body>
+</html>
