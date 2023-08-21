@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudando Iframes - Quadros em linha</title>
+    <style>
+        iframe {
+            border: 1px dashed black;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de um Iframe</h1>
+    <p>Acessando o site do 
+        
+
+        <!-- tamaho padrão de iframe = 300 por 150px-->
+        <iframe src="https://www.nightwish.com/" frameborder="0" height="500"> <!-- nesse caso alterei a altura do iframe, POrem, o que vale é o que estiver na CSS-->
+            <a href="https://www.nightwish.com/">Nightwish</a>
+        </iframe>
+        
+         para aprender programar </p>
+
+         <p>Veja o site  do guitarrista
+              <iframe src="https://www.ericjohnson.com/" frameborder="0" scolling="no">
+                <!-- frame border tem apenas 2 opçoes 0 ou 1 ..zero pra nao ter borda e 1 para ter, porem a melhor oppcaçõ é configurar a borda no CSS-->
+                <a href="https://www.ericjohnson.com/" target="_blank">  Eric Johnson</a>
+              </iframe>
+             <!-- Alguns sites possuem proteção para não aparecer npo iframe -->
+         </p>
+    
+</body>
+</html>
